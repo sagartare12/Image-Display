@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        .img{
+            display: inline-flex;
+            margin: 5% 10% 0% 15%;
+        }
+        img
+       {
+            width: 70%;
+        }
+        .left-img,
+        .right-img{
+            margin-top: 10%;
+        }
+        @media only screen and (max-width: 768px) {
+   .img {
+       flex-wrap: wrap;
+       width:100%;
+       margin-left:8%;
+   }
+   img{
+       margin-bottom: 8%;
+       width:85%;
+   }
+}
+    </style>
+</head>
+<body>
+    <div class="img">
+        <div class="left-img">
+            <img src="./img/left-img.jpeg" alt="left-img">
+        </div>
+        <div class="middle-img">
+            <img src="./img/middle-img.jpeg" alt="middle-img">
+        </div>
+        <div class="left-img">
+            <img src="./img/right-img.jpeg" alt="right-img">
+        </div>
+    </div>
+</body>
+</html>
